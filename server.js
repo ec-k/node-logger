@@ -27,15 +27,8 @@ function getLogFileName() {
   let now = new Date();
   return (
     "richDesktopExperiment_" +
-    `${now.getFullYear()}` +
-    "-" +
-    `${now.getMonth()}` +
-    1 +
-    "-" +
-    `${now.getDate()}` +
+    `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}` +
     "_" +
-    `${now.getMinutes()}` +
-    "-" +
-    `${now.getSeconds()}`
+    `${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`
   );
 }
